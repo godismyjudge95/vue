@@ -18,7 +18,7 @@ export function createLivewireApp(createMyApp) {
 		setupLivewireMixin(newApp);
 
 		newApp.mount(div.firstElementChild);
-		message.response.effects.html = div.firstElementChild.outerHTML;
+		message.response.effects.html = div.firstElementChild;
 	});
 	
 	window.livewire.hook('element.initialized', el => {
